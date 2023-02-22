@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos usuario</title>
+    <link rel="stylesheet" href="css/site.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="" alt="avatar" class="avatar" id="avatar">
+            <!-- el alt es para que cuando se cargue esa imagen y aun no ha salido
+            puede saber que ahí va el Avatar -->
+        </div>
+        <div class="data">
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" name="name"></div>
+<!-- la <b> pone el texto en negrita destacandolo - en label for name, estamos diciendo que esa etiqueta hace referencia al input name-->
+            <label for="lastname"><b>Last name</b></label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+        <button type="button" onclick="console.log(document.getElementById('name').value)">Recargar</button>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <!-- para asociar el documento creado en js, tenemos que crear la etiqueta
+    script src = e indicarle que js queremos que lea -->
+</body>
+</html>
